@@ -33,6 +33,10 @@ class App extends Component {
      this.setState({ todos: todos });
    }
 
+   // deleteToDo() {
+   //   console.log('deleteToDo executed');
+   // }
+
   render() {
     return (
       <div className="App">
