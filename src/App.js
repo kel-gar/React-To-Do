@@ -13,7 +13,6 @@ class App extends Component {
         ],
         newTodoDescription: ''
       };
-      // this.deleteTodo = this.deleteTodo.bind(this);
    }
 
    handleChange(e) {
@@ -35,11 +34,10 @@ class App extends Component {
    }
 
    deleteTodo(index) {
-     console.log(index)
-     // const todos = this.state.todos.slice();
-     // const todo = todos[index];
-     // const newTodos = todos.filter(todo => todo < todos.length);
-     // this.setState({ todos: newTodos });
+     const todos = this.state.todos.slice();
+     const todo = todos[index];
+     const newTodos = todos.filter(item=> item !== todo);
+     this.setState({ todos: newTodos });
  }
 
   render() {
